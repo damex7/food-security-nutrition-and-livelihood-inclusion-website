@@ -1,0 +1,15 @@
+*{
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav .icon img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.nav{
+    background-color: green;
+}
