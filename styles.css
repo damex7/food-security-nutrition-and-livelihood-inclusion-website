@@ -228,6 +228,13 @@ nav{
     text-align: center;
 }
 
+.projectcontents{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
 .projectcontents .projectcard{
     display: flex;
     flex-direction: column;
@@ -264,7 +271,7 @@ nav{
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
     text-align: center;
 }
 
@@ -278,6 +285,8 @@ nav{
 
 .inclusivenesscard img{
     width:200px;  
+    height: 100px;
+    object-fit: cover;
 }
 
 .inclusivenesscontent{
@@ -368,8 +377,47 @@ footer{
     text-align: center;
 }
 
+.cancel{
+    display: none;
+}
+
+.bars{
+    display: none;
+}
+
+.shows{
+    display: block !important;
+}
+
+.hide{
+    display: none !important;
+}
+
 @media screen and (max-width: 540px){
     nav{
+        position: absolute;
+        width: 300px;
+        right: 0;
+        top: 0;
         display: none;
+    }
+
+    .nav nav ul{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        padding: 20px;
+    }
+
+    .bars{
+        display: block;
+    }
+
+    .cancel{
+        display: block;
+        color: white;
+        position: absolute;
+        top: 15px;
+        right: 15px;
     }
 }
