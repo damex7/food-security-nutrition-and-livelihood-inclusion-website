@@ -2,14 +2,374 @@
     padding: o;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    margin: 0;
+    padding: 0;
 }
 
 .nav .icon img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 40%;
+}
+
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.nav .icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #2E7D32;
+    font-family: "Lobster", sans-serif;
 }
 
 .nav{
-    background-color: green;
+    display: flex;
+    height: 15vh;
+    padding: 20px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+}
+
+nav{
+    width: 100%;
+}
+
+.nav nav ul{
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+}
+
+.nav nav ul a{
+    text-decoration: none;
+    color: #2E7D32;
+    padding: 5px;
+    transform: 0.2s;
+    font-weight: 600;
+} 
+
+.nav nav ul a.active{
+    border-bottom: 2px solid #2E7D32;
+}
+
+.nav nav ul a:hover{
+    border-bottom: 2px solid #2E7D32;
+}
+
+/* hero */
+
+.hero{
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.37)), url(img/hero\ bg.jpg);
+    align-content: center;
+    object-fit: cover;
+}
+
+.hero .write-up{
+    align-self: center;
+    padding: 20px;
+}
+
+.firstpart{
+    font-size: 40px;
+}
+
+.write-up p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.green{
+    color: #2E7D32;
+}
+
+/* About */
+.about{
+    /* height: 100vh; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+
+.abouttitle{
+    justify-self: center;
+}
+
+.aboutimg img{
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.aboutcontent{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-self: center;
+}
+
+.aboutcardtitle{
+    font-size: 16px;
+}
+
+.aboutcard{
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    width: 300px;
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    text-align: center;
+}
+
+.aboutcards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    justify-content: center;
+    gap: 50px;
+    /* background-color: red; */
+}
+
+/* why food security */
+
+.whyfoodsecurity{
+    /* height: 100vh; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+}
+
+.wfscontent{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.wfsimg{
+    width: 80%;
+    /* background-color: red; */
+}
+
+.wfsimg img{
+    width: 30%;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.wfscard{
+    display: flex;
+    /* flex-direction: column; */
+    width: 225px;
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.wfscards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.wfscards1{
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.wfscard1{
+    display: flex;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 50%;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+/*  */
+
+/* Project */
+.projects{
+    /* height: 50vh; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+}
+
+.projectcontents .projectcard{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border: 1px solid #ddd;
+    height: 250px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    gap: 5px;
+    /* border-radius: 10px; */
+}
+
+.learnmore a{
+    text-decoration: none;
+    color: green;
+}
+
+.learnmore a:hover{
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.projectcard .projectcardimg img{
+    height: 100px;
+    width: 200px;
+    object-fit: cover;
+    /* border-radius: 10px; */
+}
+
+
+/* inclusiveness */
+
+.inclusiveness{
+    /* height: 100vh; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+}
+
+.inclusivenesscard{
+    height: 300px;
+    width: 200px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    /* border-radius: 10px; */
+}
+
+.inclusivenesscard img{
+    width:200px;  
+}
+
+.inclusivenesscontent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.ting2{
+    padding: 5px;
+}
+
+body{
+    position: relative;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: #2E7D32;
+}
+
+.footercontent .icon1 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 40%;
+}
+
+.icon1{
+    display: flex;
+    gap: 10px;
+    color: white;
+    font-family: "Lobster", sans-serif;
+    height: 60px;
+    /* background-color: red; */
+    align-items: center;
+}
+
+.footercontent{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    padding: 20px;
+}
+
+.quicklinkstitle h1{
+    color: white;
+}
+
+.quicklinks1 ul{
+    list-style-type: none;
+}
+
+.quicklinks1 ul li a{
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    color: white;
+}
+
+.contact{
+    color: white;
+}
+
+.contacttitle {
+    color: white;
+}
+
+.contactting{
+    display: flex;
+    gap: 5px;
+}
+
+.ting3{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.date{
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 540px){
+    nav{
+        display: none;
+    }
 }
