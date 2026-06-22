@@ -71,10 +71,11 @@ nav{
 /* hero */
 
 .hero{
-    height: 100vh;
+    height: 85vh;
     background: linear-gradient(rgba(255, 255, 255, 0.37)), url(img/hero\ bg.jpg);
+    background-repeat: no-repeat;
     align-content: center;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 .hero .write-up{
@@ -122,6 +123,8 @@ nav{
     flex-wrap: wrap;
     gap: 50px;
     justify-self: center;
+    justify-content: center;
+    /* background-color: red; */
 }
 
 .aboutcardtitle{
@@ -393,7 +396,7 @@ footer{
     display: none !important;
 }
 
-@media screen and (max-width: 540px){
+@media screen and (max-width: 840px){
     nav{
         position: absolute;
         width: 300px;
@@ -411,6 +414,9 @@ footer{
 
     .bars{
         display: block;
+        position: absolute;
+        top: 60px;
+        right: 10px;
     }
 
     .cancel{
